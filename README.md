@@ -4,15 +4,18 @@ This workflow allows you to manage your public transport trips in Oslo and Akers
 ![Workflow demo](http://i.imgur.com/rVcZv26.gif)
 
 ## Installation
-1. Download the workflow and import it to Alfred
-2. Type "ruter" to open the workflow
-
+1. Download and import the workflow to Alfred
+2. Open Alfred and type "ruter" to get started
 
 ## Feedback / Issues / Improvements
 This workflow may contain bugs and is released "as is". If you encounter a bug, or have suggestions, you are welcome to do that [here](https://github.com/kimsyversen/ruter_workflow_alfred/issues)
 
 ## Disclaimer
 This workflow is developed on a private basis and have no relation to Ruter other than it uses the official [Ruter API](https://ruter.no/labs/). 
+
+
+## Thanks to
+[Dean Jackson](https://github.com/deanishe/alfred-workflow) for his workflow library
 
 ## License
 
