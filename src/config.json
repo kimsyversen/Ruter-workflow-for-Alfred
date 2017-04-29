@@ -1,0 +1,16 @@
+{
+    "last_requested_route": "brygga", 
+    "routes": {
+        "school": {
+            "from_stop_id": "3010520", 
+            "to_stop_id": "3010013"
+        }, 
+        "work": {
+            "from_stop_id": "3010520", 
+            "to_stop_id": "3010013"
+        }
+    }, 
+    "settings": {
+        "cache_time": "180"
+    }
+}
