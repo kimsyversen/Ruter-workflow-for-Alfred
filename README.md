@@ -1,5 +1,8 @@
 # Ruter workflow for Alfred
-This workflow allows you to manage your public transport trips in Oslo and Akershus (Norway) with Alfred. Now you can easily browse trips and plan when to leave your apartment.
+This workflow allows you to manage your public transport trips in Oslo and Akershus (Norway). Now you can easily browse trips and plan when to leave your apartment directly from Alfred.
+
+
+The workflow is probably only of interest of those living in Oslo and Oslo and Akershus (Norway). It might serve as a basis for developing similar workflows in other cities/countries.
 
 ![Workflow demo](http://i.imgur.com/rVcZv26.gif)
 
