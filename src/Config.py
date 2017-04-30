@@ -2,25 +2,23 @@
 import json
 
 class Config(object):
-	def get_route(self, route):
+	def get_route(self, route = ""):
+		if route == "":
+			return self.config["routes"]
+
 		return self.config["routes"][route]
 
-	def get_routes(self):
-		return self.config["routes"]
+	def get(self, key = ""):
+		if key == "":
+			return self.config
 
-	def get(self):
-		return self.config
+		return self.config[key]
 
-	def get_last_requested_route(self):
-		return self.config["last_requested_route"]
+	#def get_last_requested_route(self):
+	#	return self.config["last_requested_route"]
 
-	def set_last_requested_route(self, value):
-		self.config["last_requested_route"] = value
-
-	def check_if_route_exists(self, route_name):
-		for route in self.get_routes():
-			if name in route:
-				return True
+	#def set_last_requested_route(self, value):
+	#	self.config["last_requested_route"] = value
 
 	def set(self, key, value):
 		self.config[key] = value
@@ -34,8 +32,9 @@ class Config(object):
 		with open('config.json', 'w') as f:
 			json.dump(self.config, f, sort_keys=True, indent=4)
 
-	def add(self, parent, child, start_id, stop_id):
-		self.config[parent][child] = { "from_stop_id" : start_id, "to_stop_id" : stop_id }
+	def add(self, parent, child, data):
+		self.config[parent][child] = data
+		self.save()
 
 	def delete(self, parent, child):
 		self.config[parent].pop(child)

@@ -9,14 +9,10 @@ if __name__ == u"__main__":
 	wf = Workflow()
 
 	config = Config()
-	routes = config.get_routes()
-
-
+	routes = config.get_route()
 
 	for route in routes:
 		title = "Route to %s" % (route) 
 		wf.add_item(title=title, subtitle="", valid=True,  arg=route)
 
 	wf.send_feedback()
-
-

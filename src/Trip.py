@@ -1,7 +1,7 @@
 # encoding: utf-8
 class Trip(object):
   def __init__(self, from_place_id, to_place_id, from_place_name, 
-    to_place_name, arrival_time, departure_time, travel_time, line, requires_change, 
+    to_place_name, arrival_time, departure_time, travel_time, line, 
     number_of_changes_required, current_time, from_place_district,to_place_district,
     deviations):
     self.from_place_id = from_place_id
@@ -12,7 +12,6 @@ class Trip(object):
     self.departure_time = departure_time
     self.travel_time = travel_time
     self.line = line
-    self.requires_change = requires_change
     self.number_of_changes_required = number_of_changes_required
     self.current_time = current_time
     self.from_place_district = from_place_district

@@ -8,8 +8,8 @@ if __name__ == u"__main__":
 
 	c = Config()
 
-	routes = c.get_routes()
+	routes = c.get_route()
 
 	route_name = os.getenv('env_route_name')
 	
-	c.delete("routes",route_name)
+	c.delete("routes", route_name)

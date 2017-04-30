@@ -479,26 +479,18 @@
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>fixedorder</key>
-				<true/>
-				<key>items</key>
-				<string>[{"title":"Show routes","arg":"show","subtitle":"Show your routes"},{"title":"Delete a route","arg":"delete","subtitle":"Your routes are shown after you press enter"},{"title":"Create a new route","arg":"create","subtitle":"Do a search for a trip on www.ruter.no first, then copy the link"}]</string>
-				<key>keyword</key>
-				<string>ruter</string>
-				<key>runningsubtext</key>
-				<string></string>
+				<integer>0</integer>
 				<key>subtext</key>
-				<string>Create, show or delete routes</string>
-				<key>title</key>
-				<string>Get ruterinfo directly in Alfred!</string>
+				<string>Search for the route at www.ruter.no, then paste the URL here</string>
+				<key>text</key>
+				<string>Paste URL</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>BD98504D-F023-4CFB-8E06-E86812719924</string>
+			<string>F8431E63-2EAD-4E6B-9563-497ED3824B92</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -528,6 +520,33 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"title":"Show routes","arg":"show","subtitle":"Show your routes"},{"title":"Delete a route","arg":"delete","subtitle":"Your routes are shown after you press enter"},{"title":"Create a new route","arg":"create","subtitle":"Search for a trip on www.ruter.no first, then copy the link"}]</string>
+				<key>keyword</key>
+				<string>ruter</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Create, show or delete routes</string>
+				<key>title</key>
+				<string>Get ruterinfo directly in Alfred!</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>BD98504D-F023-4CFB-8E06-E86812719924</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -549,19 +568,17 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>subtext</key>
-				<string>Search for the route at www.ruter.no, then paste the URL here</string>
-				<key>text</key>
-				<string>Paste URL</string>
-				<key>withspace</key>
-				<true/>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>[\s\S]</string>
+				<key>replacestring</key>
+				<string></string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.utility.replace</string>
 			<key>uid</key>
-			<string>F8431E63-2EAD-4E6B-9563-497ED3824B92</string>
+			<string>F4770729-786D-43F7-9CB3-9987A7D11B7A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -580,23 +597,6 @@
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>32A59766-7512-4819-8D2D-4FFC9D94F990</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
-				<string>[\s\S]</string>
-				<key>replacestring</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>F4770729-786D-43F7-9CB3-9987A7D11B7A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -874,7 +874,7 @@
 			<key>note</key>
 			<string>Show saved routes</string>
 			<key>xpos</key>
-			<integer>670</integer>
+			<integer>660</integer>
 			<key>ypos</key>
 			<integer>210</integer>
 		</dict>
@@ -947,7 +947,7 @@
 		<key>BDF46A45-8038-487D-A55A-2E8B03A84E97</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1080</integer>
+			<integer>1070</integer>
 			<key>ypos</key>
 			<integer>210</integer>
 		</dict>
@@ -978,7 +978,7 @@
 			<key>note</key>
 			<string>Get routes</string>
 			<key>xpos</key>
-			<integer>880</integer>
+			<integer>870</integer>
 			<key>ypos</key>
 			<integer>210</integer>
 		</dict>

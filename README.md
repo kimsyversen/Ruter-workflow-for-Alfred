@@ -1,9 +1,9 @@
 # Ruter workflow for Alfred
-The workflow allows you to manage your public transport trips in Oslo and Akershus (Norway) through Alfred. Now you can easily browse trips and plan when to leave directly from Alfred.
+The workflow allows you to manage your public transport trips in Oslo and Akershus (Norway) through Alfred. Now you can easily browse trips and know when to leave, directly from Alfred.
 
-It is probably only of interest of those living in Oslo and Oslo and Akershus (Norway). It might serve as a basis for developing similar workflows in other cities/countries.
+![Workflow demo](http://i.imgur.com/PNsE2fy.gif)
 
-![Workflow demo](http://i.imgur.com/rVcZv26.gif)
+*This workflow is probably only of interest of those living in Oslo and Oslo and Akershus (Norway). It might serve as a basis for developing similar workflows in other cities/countries.*
 
 ## Installation
 1. Download and import the workflow to Alfred
@@ -19,13 +19,11 @@ This workflow is developed on a private basis and have no relation to Ruter othe
 
 ## FYI
 * All searches are performed based on the current time. It is currently no way to plan trips hours ahead.
-* The workflow caches and remembers the previous trip for browsed for 3 minutes
 
 ## Thanks to
 [Dean Jackson](https://github.com/deanishe/) for the workflow [library](https://github.com/deanishe/alfred-workflow) and [icons](http://icons.deanishe.net/)
 
 ## License
-
 MIT License
 
 Copyright (c) 2017 Kim Syversen
@@ -35,3 +33,4 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+

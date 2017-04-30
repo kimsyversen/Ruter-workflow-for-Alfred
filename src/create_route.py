@@ -10,13 +10,12 @@ def find_route_id(string, start_pattern, end_pattern):
 
 	return string[start_index:end_index]
 
-
 if __name__ == u"__main__":
 	wf = Workflow()
 
 	c = Config()
 
-	routes = c.get_routes()
+	routes = c.get_route()
 
 	route_name = os.getenv('env_route_name')
 
@@ -25,6 +24,6 @@ if __name__ == u"__main__":
 	start_id = find_route_id(url, "Fra/(", ")")
 	stop_id = find_route_id(url, "til/(", ")")
 
-	c.add("routes",route_name,start_id,stop_id)
+	data = { "from_stop_id" : start_id, "to_stop_id" : stop_id }
 
-	c.save()
+	c.add("routes",route_name,data)
