@@ -2,9 +2,13 @@
     "cache_time": "180", 
     "last_requested_route": "work", 
     "routes": {
-        "Til l\u00f8kka": {
-            "from_stop_id": "3010430", 
+        "T2 til Olaf Ryes Plass": {
+            "from_stop_id": "30117566", 
             "to_stop_id": "3010513"
+        }, 
+        "Torshov - Thune": {
+            "from_stop_id": "3010430", 
+            "to_stop_id": "3012507"
         }
     }
 }

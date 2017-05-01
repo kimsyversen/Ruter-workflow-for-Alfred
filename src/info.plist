@@ -4,8 +4,6 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.kimsyversen.ruter</string>
-	<key>category</key>
-	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>0AA0E7B6-63A7-427F-B602-A3D022550309</key>
@@ -835,7 +833,7 @@
 				<key>items</key>
 				<string>[{"title":"Show routes","arg":"show","subtitle":"Show your routes"},{"title":"Delete a route","arg":"delete","subtitle":"Your routes are shown after you press enter"},{"title":"Create a new route","arg":"create","subtitle":"Search for a trip on www.ruter.no first, then copy the link"}]</string>
 				<key>keyword</key>
-				<string>r2</string>
+				<string>0ol9r2</string>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>subtext</key>
