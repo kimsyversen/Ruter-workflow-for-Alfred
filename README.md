@@ -5,6 +5,8 @@ The workflow allows you to manage your public transport trips in Oslo and Akersh
 
 **There is currently a bug that makes the workflow fail if you select a start/stop point which is not marked by a tram/train/bus or tube on Ruter's website. Don't select points marked with [område] or points that is a street**
 
+**There is currently a bug that makes the workflow fail if you select a start/stop point which is not marked by a tram/train/bus or tube on Ruter's website. Don't select points marked with [område] or points that is a street**
+
 *This workflow is probably only of interest of those living in Oslo and Oslo and Akershus (Norway). It might serve as a basis for developing similar workflows in other cities/countries.*
 
 ## Installation
