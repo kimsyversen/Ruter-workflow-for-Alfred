@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>12D9E66A-5BEC-445F-9A2F-55606D123674</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4CABF171-AEF5-4BA4-B612-C7424AA84354</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>1AD134EA-AAB2-411A-83A5-906895BFDDFF</key>
 		<array>
 			<dict>
@@ -73,6 +86,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>4CABF171-AEF5-4BA4-B612-C7424AA84354</key>
+		<array/>
 		<key>65875085-87DF-4637-B2D8-A71E2AD1DD82</key>
 		<array>
 			<dict>
@@ -460,6 +475,33 @@
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"title":"Show routes","arg":"show","subtitle":"Show your routes"},{"title":"Delete a route","arg":"delete","subtitle":"Your routes are shown after you press enter"},{"title":"Create a new route","arg":"create","subtitle":"Search for a trip on www.ruter.no first, then copy the link"}]</string>
+				<key>keyword</key>
+				<string>ruter</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Create, show or delete routes</string>
+				<key>title</key>
+				<string>Get ruterinfo directly in Alfred!</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>BD98504D-F023-4CFB-8E06-E86812719924</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>subtext</key>
 				<string>Let the route name be one word, e.g. "work"</string>
@@ -516,33 +558,6 @@
 			<string>7E48AE20-E09A-4484-BAC0-BADE3D2FC0D0</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>fixedorder</key>
-				<true/>
-				<key>items</key>
-				<string>[{"title":"Show routes","arg":"show","subtitle":"Show your routes"},{"title":"Delete a route","arg":"delete","subtitle":"Your routes are shown after you press enter"},{"title":"Create a new route","arg":"create","subtitle":"Search for a trip on www.ruter.no first, then copy the link"}]</string>
-				<key>keyword</key>
-				<string>ruter</string>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Create, show or delete routes</string>
-				<key>title</key>
-				<string>Get ruterinfo directly in Alfred!</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>BD98504D-F023-4CFB-8E06-E86812719924</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -810,6 +825,72 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"title":"Show routes","arg":"show","subtitle":"Show your routes"},{"title":"Delete a route","arg":"delete","subtitle":"Your routes are shown after you press enter"},{"title":"Create a new route","arg":"create","subtitle":"Search for a trip on www.ruter.no first, then copy the link"}]</string>
+				<key>keyword</key>
+				<string>r2</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Create, show or delete routes</string>
+				<key>title</key>
+				<string>Get ruterinfo directly in Alfred!</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>12D9E66A-5BEC-445F-9A2F-55606D123674</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>import sys
+from workflow import Workflow
+
+UPDATE_SETTINGS = {'github_slug': 'kimsyversen/Ruter-workflow-for-Alfred'}
+
+wf = Workflow(update_settings=UPDATE_SETTINGS)
+
+if wf.update_available:
+	wf.add_item('New version available',
+                'Action this item to install the update',
+                autocomplete='workflow:help',
+                icon=ICON_INFO)
+    #wf.start_update()
+
+query = "{query}"
+
+sys.stdout.write(query)</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>4CABF171-AEF5-4BA4-B612-C7424AA84354</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -823,6 +904,13 @@
 			<integer>1010</integer>
 			<key>ypos</key>
 			<integer>580</integer>
+		</dict>
+		<key>12D9E66A-5BEC-445F-9A2F-55606D123674</key>
+		<dict>
+			<key>xpos</key>
+			<integer>260</integer>
+			<key>ypos</key>
+			<integer>880</integer>
 		</dict>
 		<key>1AD134EA-AAB2-411A-83A5-906895BFDDFF</key>
 		<dict>
@@ -868,6 +956,15 @@
 			<integer>1550</integer>
 			<key>ypos</key>
 			<integer>400</integer>
+		</dict>
+		<key>4CABF171-AEF5-4BA4-B612-C7424AA84354</key>
+		<dict>
+			<key>note</key>
+			<string>Update feature: In progress</string>
+			<key>xpos</key>
+			<integer>420</integer>
+			<key>ypos</key>
+			<integer>880</integer>
 		</dict>
 		<key>65875085-87DF-4637-B2D8-A71E2AD1DD82</key>
 		<dict>
@@ -940,9 +1037,9 @@
 		<key>BD98504D-F023-4CFB-8E06-E86812719924</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<integer>10</integer>
 			<key>ypos</key>
-			<integer>400</integer>
+			<integer>380</integer>
 		</dict>
 		<key>BDF46A45-8038-487D-A55A-2E8B03A84E97</key>
 		<dict>

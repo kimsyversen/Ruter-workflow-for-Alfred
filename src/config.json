@@ -2,21 +2,9 @@
     "cache_time": "180", 
     "last_requested_route": "work", 
     "routes": {
-        "fagerstrand": {
-            "from_stop_id": "3010527", 
-            "to_stop_id": "2000001184"
-        }, 
-        "helsfyr": {
-            "from_stop_id": "3010527", 
-            "to_stop_id": "1000021179"
-        }, 
-        "langt": {
-            "from_stop_id": "3012165", 
-            "to_stop_id": "6021001"
-        }, 
-        "work": {
-            "from_stop_id": "3010527", 
-            "to_stop_id": "3012507"
+        "Til l\u00f8kka": {
+            "from_stop_id": "3010430", 
+            "to_stop_id": "3010513"
         }
     }
 }

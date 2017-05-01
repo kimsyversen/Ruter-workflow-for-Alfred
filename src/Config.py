@@ -14,12 +14,6 @@ class Config(object):
 
 		return self.config[key]
 
-	#def get_last_requested_route(self):
-	#	return self.config["last_requested_route"]
-
-	#def set_last_requested_route(self, value):
-	#	self.config["last_requested_route"] = value
-
 	def set(self, key, value):
 		self.config[key] = value
 		self.save()

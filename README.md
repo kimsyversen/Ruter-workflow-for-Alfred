@@ -1,7 +1,9 @@
 # Ruter workflow for Alfred
 The workflow allows you to manage your public transport trips in Oslo and Akershus (Norway) through Alfred. Now you can easily browse trips and know when to leave, directly from Alfred.
 
-![Workflow demo](http://i.imgur.com/rZFmLc7.gif)
+![Workflow demo](http://i.imgur.com/BU2bRs5.gif)
+
+**There is currently a bug that makes the workflow fail if you select a start/stop point which is not marked by a tram/train/bus or tube on Ruter's website. Don't select points marked with [område] or points that is a street**
 
 *This workflow is probably only of interest of those living in Oslo and Oslo and Akershus (Norway). It might serve as a basis for developing similar workflows in other cities/countries.*
 
@@ -33,4 +35,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
