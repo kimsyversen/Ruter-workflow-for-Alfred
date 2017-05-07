@@ -26,9 +26,13 @@ if __name__ == u"__main__":
 	#route_name = route_name.encode("utf-8")
 	route_name = wf.decode(os.getenv('env_route_name'))
 
+
+
 	log.debug("Created the route %s" % (route_name))
 
-	url = os.getenv('env_url')
+	url = wf.decode(os.getenv('env_url'))
+
+	log.debug("Created the route %s" % (url))
 
 	start_id = find_route_id(url, "Fra/(", ")")
 	stop_id = find_route_id(url, "til/(", ")")
