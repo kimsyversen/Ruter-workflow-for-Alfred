@@ -66,9 +66,9 @@ class RouteParser(object):
       number_of_changes_required = 0
       deviations = False
 
-      depTime = datetime.datetime.strptime(tp['DepartureTime'], "%Y-%m-%dT%H:%M:%S")
-      arrTime = datetime.datetime.strptime(tp['ArrivalTime'], "%Y-%m-%dT%H:%M:%S")
-      travTime = datetime.datetime.strptime(tp['TotalTravelTime'], "%H:%M:%S")
+      depTime = datetime.datetime.strptime(tp['DepartureTime'][0:19], "%Y-%m-%dT%H:%M:%S")
+      arrTime = datetime.datetime.strptime(tp['ArrivalTime'][0:19], "%Y-%m-%dT%H:%M:%S")
+      travTime = datetime.datetime.strptime(tp['TotalTravelTime'][0:19], "%H:%M:%S")
 
       stages = tp['Stages']
 
