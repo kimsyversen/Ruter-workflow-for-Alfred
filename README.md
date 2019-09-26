@@ -5,7 +5,7 @@ This workflow allows you to manage your public transport routes in Oslo and Aker
 
 ## Usage
 
-1. Go to [Ruter's website](https://ruter.no/) and search for a route. Don't select points indicated by ![Position](http://i.imgur.com/IUsgVfW.png) ![House](http://i.imgur.com/6N7A0i1.png))
+1. Go to [Ruter's website](https://ruter.no/) and search for a route. Don't select points indicated by ![Position](http://i.imgur.com/IUsgVfW.png) ![House](http://i.imgur.com/6N7A0i1.png)
 2. Copy the URL (e.g. https://ruter.no/reiseplanlegger/Mellom/Fra/(3012165)Grefsen%20stadion%20(Oslo)/til/(3010013)Jernbanetorget%20(foran%20Oslo%20S)%20(Oslo)/etter/#st:0,sp:0,bp:0)
 3. Open Alfred and type "ruter" and select create route
 4. Give the route a name and paste the URL
